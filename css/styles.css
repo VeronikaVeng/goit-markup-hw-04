@@ -16,6 +16,8 @@ html {
     --accent: #E7E9FC;
     --button-hover: #404BBF;
     --light: #F4F4FD;
+    --border:#8E8F99;
+    --green:#31D0AA;
 }
 
 body {
@@ -155,7 +157,7 @@ p {
 }
 
 /* hero */
- 
+
 .hero {
     padding-top: 192px;
     padding-bottom: 192px;
@@ -163,6 +165,23 @@ p {
     color: var(--background-color);
     background-color: var(--dark);
     text-align: center;
+}
+
+.ovarley {
+    max-width: 1440px;
+    height: 603px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000000;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/people-office\ 1\ \(1\).jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -195,6 +214,9 @@ p {
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--button-hover);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -211,6 +233,20 @@ p {
     width: 264px;
 }
 
+.section-two-box {
+    margin-bottom: 8px;
+    width: 264px;
+    height: 112px;
+    background-color: var(--light);
+}
+
+.section-two-icon {
+   margin-left: 100px;
+   margin-top: 24px;
+   margin-right: 100px;
+   margin-bottom: 24px;
+}
+
 .title-second {
     font-size: 20px;
     line-height: 1.2;
@@ -219,6 +255,7 @@ p {
 
 .text {
     margin-top: 8px;
+    margin-bottom: 8px;
 
     color: var(--text);
     font-size: 16px;
@@ -265,7 +302,72 @@ p {
 .name {
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
+
+.team-soc-list {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content:space-between;
+}
+
+.team-soc-item {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.team-soc-list.team-soc-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.team-soc-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    background-color: var(--primary-brand);
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+}
+
+.team-soc-icon {
+    fill: currentColor;
+}
+
+/* section-5 */
+.customers-item {
+    width: 168px;
+    height: 88px;
+
+    color: var(--primary-brand);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.customers-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.customers-link{
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    width: 168px;
+    height: 88px;
+    fill: var(--border);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--primary-brand);
+    border-radius: 4px;
+    fill: var(--primary-brand);
+}
+
 
 /* footer */
 .footer {
@@ -273,6 +375,15 @@ p {
     padding-bottom: 100px;
 
     background-color: var(--dark);
+}
+
+.footer-box {
+    display: flex;
+}
+
+.footer-one {
+    margin-right: 120px;
+    justify-content: flex-start;
 }
 
 .footer-logo {
@@ -297,6 +408,43 @@ p {
     line-height: 1.5;
 }
 
+.footer-social-title {
+    margin-bottom: 16px;
+
+    color: var(--background-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footer-soc-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-soc-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.footer-soc-link {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: var(--light);
+    border-radius: 50%;
+    background-color: var(--text);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: var(--green);
+}
 
 /* portfolio.html */
 
@@ -334,6 +482,10 @@ p {
 .filter-button:focus {
     color: var(--background-color);
     background-color: var(--primary-brand);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -354,6 +506,10 @@ p {
 .card-element {
     margin-left: 24px;
 } 
+
+.card-element:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 
 .card-element:nth-child(3n + 1) {
     margin-left:0px;
